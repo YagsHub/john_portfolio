@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #4E67EB;
+  --color-primary-dark: #3D52C7;
+  --color-secondary: #291D89;
+  --color-background: #F0F4FF;
+  --color-surface: #FFFFFF;
+  --color-text: #1E293B;
+  --color-text-muted: #64748B;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-text font-sans antialiased;
+    @apply dark:bg-slate-950 dark:text-slate-100;
+  }
+
+  ::selection {
+    @apply bg-primary/30 text-secondary;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-lg;
+    @apply dark:bg-slate-900/70 dark:border-slate-700/50;
+  }
+
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-lg;
+    @apply dark:bg-slate-900/70 dark:border-slate-700/50;
+    @apply rounded-2xl p-6 transition-all duration-300;
+    @apply hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-br from-primary via-primary/80 to-secondary;
+  }
+
+  .section-padding {
+    @apply py-20 px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-title {
+    @apply text-3xl sm:text-4xl font-bold text-text dark:text-white mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-text-muted dark:text-slate-400 text-lg max-w-2xl;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl;
+    @apply bg-primary text-white font-semibold;
+    @apply hover:bg-primary-dark transition-all duration-300;
+    @apply hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5;
+    @apply focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2;
+    @apply dark:focus:ring-offset-slate-900;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl;
+    @apply bg-white text-primary font-semibold border-2 border-primary/20;
+    @apply hover:bg-primary/5 hover:border-primary/40 transition-all duration-300;
+    @apply hover:shadow-lg hover:-translate-y-0.5;
+    @apply focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2;
+    @apply dark:bg-slate-800 dark:text-white dark:border-slate-600;
+    @apply dark:hover:bg-slate-700 dark:focus:ring-offset-slate-900;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border border-slate-200 bg-white;
+    @apply text-text placeholder:text-text-muted;
+    @apply focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary;
+    @apply transition-all duration-200;
+    @apply dark:bg-slate-800 dark:border-slate-600 dark:text-white;
+    @apply dark:placeholder:text-slate-400;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+}
