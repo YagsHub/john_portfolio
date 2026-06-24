@@ -25,20 +25,20 @@ export const fallbackSkills = {
     { id: 6, name: "Tailwind CSS", proficiency: 90 },
   ],
   backend: [
-    { id: 7, name: "Node.js", proficiency: 82 },
-    { id: 8, name: "Express.js", proficiency: 80 },
-    { id: 9, name: "PHP", proficiency: 70 },
+    { id: 7, name: "Node.js", proficiency: 70 },
+    { id: 8, name: "Express.js", proficiency: 70 },
+    { id: 9, name: "PHP", proficiency: 50 },
   ],
   database: [
     { id: 10, name: "MySQL", proficiency: 78 },
     { id: 11, name: "PostgreSQL", proficiency: 80 },
-    { id: 12, name: "MongoDB", proficiency: 75 },
   ],
   tools: [
     { id: 13, name: "Git", proficiency: 85 },
     { id: 14, name: "GitHub", proficiency: 88 },
     { id: 15, name: "Postman", proficiency: 82 },
     { id: 16, name: "VS Code", proficiency: 95 },
+    { id: 16, name: "Cursor", proficiency: 90 },
   ],
 };
 
@@ -49,8 +49,8 @@ export const fallbackProjects = [
     description:
       "A modern, responsive portfolio website showcasing skills, projects, and experience with dark mode and smooth animations.",
     technologies: ["React.js", "Tailwind CSS", "Node.js", "PostgreSQL"],
-    github_url: "https://github.com/yourusername/portfolio",
-    live_url: "https://yourportfolio.vercel.app",
+    github_url: "https://github.com/YagsHub/john_portfolio",
+    live_url: "https://john-portfolio-sandy-three.vercel.app/",
     image_url: null,
   },
   {
@@ -58,7 +58,7 @@ export const fallbackProjects = [
     title: "Task Prioritization Tool for Students",
     description:
       "An intelligent task management application for students to prioritize assignments based on deadlines and importance.",
-    technologies: ["React", "Python", "MongoDB"],
+    technologies: ["React", "Python", "PostgreSQL"],
     github_url: "https://github.com/yourusername/task-prioritization",
     live_url: "https://task-tool-demo.vercel.app",
     image_url: null,
@@ -89,10 +89,10 @@ export const fallbackExperience = [
   {
     id: 1,
     title: "Full-Stack Developer Intern",
-    company: "Tech Company Inc.",
+    company: "SouthSide IT Solutions",
     type: "internship",
     description:
-      "Developed and maintained web applications using React and Node.js. Collaborated with cross-functional teams.",
+      "Developed and maintained web applications using React and Node.js.",
     start_date: "2025-06-01",
     end_date: "2025-12-31",
     is_current: false,
@@ -110,13 +110,13 @@ export const fallbackExperience = [
   },
   {
     id: 3,
-    title: "Academic Project Lead",
+    title: "Capstone Project",
     company: "University CS Department",
     type: "academic",
     description:
-      "Led a team of 4 students in developing a task prioritization tool using agile methodology.",
-    start_date: "2024-09-01",
-    end_date: "2025-05-31",
+      "Led a team of 4 students in developing a Student News and Events Immediate Access Using Web-based System using agile methodology.",
+    start_date: "2025",
+    end_date: "2026",
     is_current: false,
   },
 ];
@@ -124,30 +124,21 @@ export const fallbackExperience = [
 export const fallbackCertifications = [
   {
     id: 1,
-    title: "Full-Stack Web Development",
-    issuer: "Online Learning Platform",
-    issue_date: "2025-06-01",
+    title: "Legacy Responsive Web Design Certification",
+    issuer: "FreeCodeCamp",
+    issue_date: "2024-04-17",
     description:
       "Comprehensive certification covering React, Node.js, and database design.",
-    credential_url: "https://example.com/cert/1",
+    credential_url: "https://www.freecodecamp.org/certification/john_vincent_b_yagong/responsive-web-design",
   },
   {
     id: 2,
-    title: "JavaScript Algorithms and Data Structures",
-    issuer: "Coding Platform",
-    issue_date: "2025-03-15",
+    title: "Full Stack Web Development Certification",
+    issuer: "Udemy",
+    issue_date: "2025-03-17",
     description:
-      "Advanced JavaScript programming and problem-solving techniques.",
-    credential_url: "https://example.com/cert/2",
-  },
-  {
-    id: 3,
-    title: "Responsive Web Design",
-    issuer: "Online Learning Platform",
-    issue_date: "2024-11-20",
-    description:
-      "Mobile-first responsive design principles and implementation.",
-    credential_url: "https://example.com/cert/3",
+      "Full Stack Web Development Certification",
+    credential_url: "https://www.udemy.com/certificate/UC-72172626-tag-from-2025-03-17/",
   },
 ];
 
