@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js",
-    "db:setup": "node database/setup.js"
+    "db:setup": "node database/setup.js",
+    "db:reset": "node database/setup.js --reset"
   },
   "dependencies": {
     "cors": "^2.8.5",

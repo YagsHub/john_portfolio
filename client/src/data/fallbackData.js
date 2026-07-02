@@ -51,7 +51,7 @@ export const fallbackProjects = [
     technologies: ["React.js", "Tailwind CSS", "Node.js", "PostgreSQL"],
     github_url: "https://github.com/YagsHub/john_portfolio",
     live_url: "https://john-portfolio-sandy-three.vercel.app/",
-    image_url: null,
+    image_url: "/personalportfolio.png",
   },
   {
     id: 2,
@@ -59,7 +59,7 @@ export const fallbackProjects = [
     description:
       "An intelligent task management application for students to prioritize assignments based on deadlines and importance.",
     technologies: ["React", "Python", "PostgreSQL"],
-    github_url: "https://github.com/yourusername/task-prioritization",
+    github_url: "https://github.com/YagsHub/task-prioritization-tool-",
     live_url: "https://task-tool-demo.vercel.app",
     image_url: null,
   },
@@ -83,6 +83,22 @@ export const fallbackProjects = [
     live_url: null,
     image_url: null,
   },
+  {
+    id: 5,
+    title: "Student News and Events Immediate Access Using Web-based System",
+    description:
+      "A web-based system for students to access news and events immediately.",
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+    ],
+    github_url: "https://github.com/YagsHub/Capstone1.1",
+    live_url: null,
+    image_url: "/student-news-events.png",
+  },
 ];
 
 export const fallbackExperience = [
@@ -104,17 +120,17 @@ export const fallbackExperience = [
     type: "freelance",
     description:
       "Built custom websites and web applications for small businesses. Managed client relationships.",
-    start_date: "2024-01-01",
+    start_date: "2026-01-01",
     end_date: null,
     is_current: true,
   },
   {
     id: 3,
     title: "Capstone Project",
-    company: "University CS Department",
+    company: "Cebu Eastern College",
     type: "academic",
     description:
-      "Led a team of 4 students in developing a Student News and Events Immediate Access Using Web-based System using agile methodology.",
+      "Lead a team of 4 students in developing a Student News and Events Immediate Access Using Web-based System using agile methodology.",
     start_date: "2025",
     end_date: "2026",
     is_current: false,
@@ -129,16 +145,17 @@ export const fallbackCertifications = [
     issue_date: "2024-04-17",
     description:
       "Comprehensive certification covering React, Node.js, and database design.",
-    credential_url: "https://www.freecodecamp.org/certification/john_vincent_b_yagong/responsive-web-design",
+    credential_url:
+      "https://www.freecodecamp.org/certification/john_vincent_b_yagong/responsive-web-design",
   },
   {
     id: 2,
     title: "Full Stack Web Development Certification",
     issuer: "Udemy",
     issue_date: "2025-03-17",
-    description:
-      "Full Stack Web Development Certification",
-    credential_url: "https://www.udemy.com/certificate/UC-72172626-tag-from-2025-03-17/",
+    description: "Full Stack Web Development Certification",
+    credential_url:
+      "https://www.udemy.com/certificate/UC-72172626-tag-from-2025-03-17/",
   },
 ];
 
